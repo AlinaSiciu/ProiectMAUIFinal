@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ProiectMAUIFinal.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ProiectMAUIFinal"
+    Shell.FlyoutBehavior="Disabled"
+    Title="ProiectMAUIFinal">
+
+    <TabBar>
+        <ShellContent
+ Title="Hello"
+ ContentTemplate="{DataTemplate local:MainPage}"
+ />
+        <ShellContent
+ Title="About"
+ ContentTemplate="{DataTemplate local:AboutPAge}"
+ />
+        <ShellContent
+ Title="My Reviews"
+ ContentTemplate="{DataTemplate local:ReviewEntryPage}"
+ />
+        <ShellContent
+Title="My Horses"
+ContentTemplate="{DataTemplate local:CalEntryPage}"
+/>
+        <ShellContent
+Title="Instructori"
+ContentTemplate="{DataTemplate local:InstrEntryPage}"
+/>
+    </TabBar>
+
+</Shell>
